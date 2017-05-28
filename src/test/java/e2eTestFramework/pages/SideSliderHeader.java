@@ -36,7 +36,7 @@ public class SideSliderHeader extends PageObject {
     }
 
     public SideSliderHeader(WebDriver driver, String pageTitle) {
-        super(driver, pageTitle);
+        super(driver, By.id(pageTitle));
     }
 
 }

@@ -26,13 +26,13 @@ public class Search extends BaseTest{
         return new Object[][]{
 
                 {LONDON,        LIST_ITEM_A_LOCATION,    LONDON_RESULTS_PAGE_TITLE},
-                {LONDON,        LIST_ITEM_B_LOCATION,    LONDON_RESULTS_PAGE_TITLE},
-                {LONDON,        LIST_ITEM_C_LOCATION,    LONDON_RESULTS_PAGE_TITLE},
-                {LEEDS,         LIST_ITEM_A_LOCATION,    LEEDS_RESULTS_PAGE_TITLE},
-                {LEEDS,         LIST_ITEM_B_LOCATION,    LEEDS_RESULTS_PAGE_TITLE},
-                {LEEDS,         LIST_ITEM_C_LOCATION,    LEEDS_RESULTS_PAGE_TITLE},
-                {BIRMINGHAM,    LIST_ITEM_A_LOCATION,    BIRMINGHAM_RESULTS_PAGE_TITLE},
-                {BIRMINGHAM,    LIST_ITEM_B_LOCATION,    BIRMINGHAM_RESULTS_PAGE_TITLE},
+//                {LONDON,        LIST_ITEM_B_LOCATION,    LONDON_RESULTS_PAGE_TITLE},
+//                {LONDON,        LIST_ITEM_C_LOCATION,    LONDON_RESULTS_PAGE_TITLE},
+//                {LEEDS,         LIST_ITEM_A_LOCATION,    LEEDS_RESULTS_PAGE_TITLE},
+//                {LEEDS,         LIST_ITEM_B_LOCATION,    LEEDS_RESULTS_PAGE_TITLE},
+//                {LEEDS,         LIST_ITEM_C_LOCATION,    LEEDS_RESULTS_PAGE_TITLE},
+//                {BIRMINGHAM,    LIST_ITEM_A_LOCATION,    BIRMINGHAM_RESULTS_PAGE_TITLE},
+//                {BIRMINGHAM,    LIST_ITEM_B_LOCATION,    BIRMINGHAM_RESULTS_PAGE_TITLE},
 //                {BIRMINGHAM,    LIST_ITEM_C_LOCATION,    BIRMINGHAM_RESULTS_PAGE_TITLE}
         };
     }
@@ -40,6 +40,7 @@ public class Search extends BaseTest{
     @Test
     @UseDataProvider("exampleLocationsURLs")
     public void testSearch(String cityName,String xPathLocation, String pageTitle) {
+
 
         WebDriver driver;
         System.setProperty(GEKHO_DRIVER, GEKHO_DRIVER_LOCATION);
